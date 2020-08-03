@@ -1,11 +1,12 @@
 #include "triangle.h"
-#include <tuple>
+//#include <tuple>
+#include <vector>
+#include <cmath>
 
 namespace trianglelib
 {
 
 Triangle::Triangle(const double a, const double b, const double c) : mA{a}, mB{b}, mC{c} {}
-
 
 Triangle::Triangle(const Triangle& triangle)
 {
@@ -13,7 +14,6 @@ Triangle::Triangle(const Triangle& triangle)
     this->mB = triangle.getSideB();
     this->mC = triangle.getSideC();
 }
-
 
 double Triangle::getSideA() const
 {
@@ -35,25 +35,86 @@ Triangle& Triangle::operator=(const Triangle& triangle)
     this->mA = triangle.getSideA();
     this->mB = triangle.getSideB();
     this->mC = triangle.getSideC();
+
+    return *this;
 }
 
 bool Triangle::operator==(const Triangle& triangle) const
 {
+    std::vector<Triangle> rotatedTriangles = triangle.rotations();
 
+    for (const Triangle& rotatedTriangle : rotatedTriangles)
+    {
+        if (this->getSideA() == triangle.getSideA() && this->getSideB() == triangle.getSideB() && this->getSideC() == triangle.getSideC())
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
-std::tuple<Triangle, Triangle, Triangle> Triangle::rotations()
+std::vector<Triangle> Triangle::rotations() const
 {
     Triangle triangle1 = Triangle(this->mA, this->mB, this->mC);
     Triangle triangle2 = Triangle(this->mC, this->mA, this->mB);
     Triangle triangle3 = Triangle(this->mB, this->mC, this->mA);
 
-    std::tuple<Triangle, Triangle, Triangle> rotatedTriangles{triangle1, triangle2, triangle3};
+    std::vector<Triangle> rotatedTriangles{triangle1, triangle2, triangle3};
 
     return rotatedTriangles;
 }
 
+bool Triangle::isEquivalent(const Triangle& triangle) const
+{
+    return (*this == triangle);
+}
 
+bool Triangle::isSimilar(const Triangle& triangle) const
+{
+    std::vector<Triangle> rotatedTriangles = triangle.rotations();
 
+    for (const Triangle& rotatedTriangle : rotatedTriangles)
+    {
+        if ((this->getSideA() / triangle.getSideA() == this->getSideB() / triangle.getSideB()) && (this->getSideA() / triangle.getSideA() == this->getSideC() / triangle.getSideC()))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+bool Triangle::isEquilateral() const
+{
+    return ((this->getSideA() == this->getSideB()) && (this->getSideA() == this->getSideC()));
+}
+
+bool Triangle::isIsosceles() const
+{
+    return ((this->getSideA() == this->getSideB()) || (this->getSideA() == this->getSideC()) || (this->getSideB() == this->getSideC()));
+}
+
+double Triangle::perimeter() const
+{
+    return (this->getSideA() + this->getSideB() + this->getSideC());
+}
+
+double Triangle::area() const
+{
+    // Heron's formula
+    double perimeter = this->perimeter();
+    double p = perimeter / 2;
+    return std::sqrt(p * (p - this->getSideA()) * (p - this->getSideB()) * (p - this->getSideC()));
+}
+
+Triangle Triangle::scale(const double factor) const
+{
+    double a = this->getSideA() * factor;
+    double b = this->getSideB() * factor;
+    double c = this->getSideC() * factor;
+
+    return Triangle{a, b, c};
+}
 
 }

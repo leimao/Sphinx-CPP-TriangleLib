@@ -1,8 +1,8 @@
 #ifndef TRIANGLE_H
 #define TRIANGLE_H
 
-//#include <vector>
-#include <tuple>
+#include <vector>
+//#include <tuple>
 
 namespace trianglelib
 {
@@ -19,6 +19,9 @@ public:
     double getSideB() const;
     double getSideC() const;
 
+    std::vector<Triangle> rotations() const;
+    // std::tuple<Triangle, Triangle, Triangle> rotations() const;
+
     Triangle& operator=(const Triangle& triangle);
     bool operator==(const Triangle& triangle) const;
 
@@ -34,9 +37,6 @@ public:
 
 private:
 
-    //std::vector<Triangle> rotations();
-    std::tuple<Triangle, Triangle, Triangle> rotations();
-    
     double mA, mB, mC;
 };
 
