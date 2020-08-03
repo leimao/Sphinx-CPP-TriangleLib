@@ -1,1 +1,1 @@
-Sphinx-CPP-TriangleLib
+# Sphinx C++ TriangleLib
