@@ -38,7 +38,7 @@ Either, you use a directory "_build" within the root path, or you separate
 The project name will occur in several places in the built documentation.
 > Project name: trianglelib
 > Author name(s): Lei Mao
-> Project release []: 1.0
+> Project release []: 1.1
 
 If the documents are to be written in a language other than English,
 you can select a language here by its language code. Sphinx will then

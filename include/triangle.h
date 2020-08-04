@@ -21,7 +21,7 @@
  * @brief Triangle library namespace.
  * @author Lei Mao
  * @date 8/3/2020
- * @version 1.0
+ * @version 1.1
  * @note Hello Underworld!
  */
 namespace trianglelib
