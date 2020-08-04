@@ -17,6 +17,7 @@ Doxygen will generate the required XML files that contains all the documentation
 │       ├── make.bat
 │       ├── Makefile
 │       └── source
+│           ├── api.rst
 │           ├── conf.py
 │           ├── index.rst
 │           ├── _static
@@ -32,11 +33,10 @@ Doxygen will generate the required XML files that contains all the documentation
 ├── LICENSE.md
 ├── README.md
 ├── requirements.txt
-├── src
-│   ├── CMakeLists.txt
-│   ├── triangle.cpp
-│   └── utils.cpp
-└── tests
+└── src
+    ├── CMakeLists.txt
+    ├── triangle.cpp
+    └── utils.cpp
 ```
 
 ## Installation
@@ -74,9 +74,11 @@ Please check the [`README`](docs/README.md) in [`docs`](docs/) for details.
 
 ## Publish Documentations
 
-Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and follow the instructions to publish the documentations. The latest version of the documentation of this repo could be found on [TriangleLib's Documentation](https://doxygen-c-trianglelib.readthedocs.io/). Use [GitHub tags](https://github.com/leimao/Sphinx-Python-TriangleLib/tags) for version control on Read the Docs.
+Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and follow the instructions to publish the documentations. The latest version of the documentation of this repo could be found on [TriangleLib's Documentation](). Use [GitHub tags]() for version control on Read the Docs.
 
 ## References
 
 * [Python Documentation Using Sphinx](https://leimao.github.io/blog/Python-Documentation-Using-Sphinx/)
-* [Python Triangle library](https://github.com/leimao/Sphinx-Python-TriangleLib)
+* [C/C++ Documentation Using Doxygen](https://leimao.github.io/blog/CPP-Documentation-Using-Doxygen/)
+* [Sphinx Python Triangle Library](https://github.com/leimao/Sphinx-Python-TriangleLib)
+* [Doxygen C++ Triangle Library](https://github.com/leimao/Doxygen-CPP-TriangleLib)

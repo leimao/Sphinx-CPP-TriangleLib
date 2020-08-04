@@ -16,7 +16,7 @@ $ doxygen
 Then modify `Doxyfile` accordingly.
 
 
-### Create Dummy Sphinx Project
+### Create Sphinx Project
 
 ```
 $ cd docs/
@@ -64,7 +64,7 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 Then modify `sphinx/source/conf.py` accordingly.
 
 
-### Generate Doxygen Documentations in Sphinx Directories
+### Generate Doxygen XML and Sphinx Documentations
 
 ```
 $ cd docs/sphinx
