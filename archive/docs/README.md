@@ -3,26 +3,34 @@
 
 ## Introduction
 
-## Instructions
 
+
+
+## Instructions
 
 ### Doxygen Quick Start
 
 ```
-$ cd docs/doxygen/
+$ cd docs/
 $ doxygen
 ```
 
 Then modify `Doxyfile` accordingly.
 
 
-### Create Dummy Sphinx Project
+### Generate Doxygen Documentations
+
 
 ```
 $ cd docs/
-$ mkdir -p sphinx
-$ cd sphinx/
-$ sphinx-quickstart 
+$ doxygen Doxyfile
+```
+
+### Sphinx Quick Start
+
+```
+$ cd docs/
+$ sphinx-quickstart --ext-autodoc --ext-doctest --ext-mathjax --ext-viewcode --extensions breathe
 Welcome to the Sphinx 3.1.2 quickstart utility.
 
 Please enter values for the following settings (just press Enter to
@@ -48,33 +56,18 @@ For a list of supported codes, see
 https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
 > Project language [en]: 
 
-Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/sphinx/source/conf.py.
-Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/sphinx/source/index.rst.
-Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/sphinx/Makefile.
-Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/sphinx/make.bat.
+Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/source/conf.py.
+Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/source/index.rst.
+Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/Makefile.
+Creating file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/make.bat.
 
 Finished: An initial directory structure has been created.
 
-You should now populate your master file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/sphinx/source/index.rst and create other documentation
+You should now populate your master file /home/leimao/GitHub/Sphinx-CPP-TriangleLib/docs/source/index.rst and create other documentation
 source files. Use the Makefile to build the docs, like so:
    make builder
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 ```
 
-Then modify `sphinx/source/conf.py` accordingly.
+Then modify `source/conf.py` accordingly.
 
-
-### Generate Doxygen Documentations in Sphinx Directories
-
-```
-$ cd docs/sphinx
-$ make html
-```
-
-### Host Doxygen Documentations on Read the Docs
-
-Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and follow the instructions to publish the documentations. The latest version of the documentation of this repo could be found on [TriangleLib's Documentation](https://doxygen-c-trianglelib.readthedocs.io/) for version control on Read the Docs.
-
-## References
-
-* [Using Doxygen in Read the Docs](https://stackoverflow.com/questions/36064976/using-doxygen-in-read-the-docs)
