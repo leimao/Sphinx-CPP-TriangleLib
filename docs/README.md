@@ -73,7 +73,7 @@ $ make html
 
 ### Host Doxygen Documentations on Read the Docs
 
-Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and follow the instructions to publish the documentations. The latest version of the documentation of this repo could be found on [TriangleLib's Documentation](https://doxygen-c-trianglelib.readthedocs.io/) for version control on Read the Docs.
+Go to [Read the Docs](`https://readthedocs.org/dashboard/import/manual/`) and follow the instructions to publish the documentations. The latest version of the documentation of this repo could be found on [TriangleLib's Documentation](https://sphinx-c-trianglelib.readthedocs.io/) for version control on Read the Docs.
 
 ## References
 
