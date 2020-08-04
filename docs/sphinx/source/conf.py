@@ -69,6 +69,3 @@ subprocess.call('cd ../../doxygen ; doxygen', shell=True)
 
 breathe_projects = { "trianglelib": "../../doxygen/build/xml/" }
 breathe_default_project = "trianglelib"
-breathe_projects_source = {
-    "triangle" : ( "../../include", ["triangle.h"] )
-}
