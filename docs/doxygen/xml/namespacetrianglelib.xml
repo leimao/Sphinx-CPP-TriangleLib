@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacetrianglelib" kind="namespace" language="C++">
+    <compoundname>trianglelib</compoundname>
+    <innerclass refid="classtrianglelib_1_1Triangle" prot="public">trianglelib::Triangle</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetrianglelib_1aa2ee5035172e33fdf4ab45a8a65068ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref></type>
+        <definition>Triangle trianglelib::createTriangle</definition>
+        <argsstring>(const double a, const double b, const double c)</argsstring>
+        <name>createTriangle</name>
+        <param>
+          <type>const double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side a. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side b. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side c. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="154" column="10" declfile="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" declline="154" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetrianglelib_1a8cec36ef24e305adbeaed65a8dc20175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool trianglelib::isTriangle</definition>
+        <argsstring>(const double a, const double b, const double c)</argsstring>
+        <name>isTriangle</name>
+        <param>
+          <type>const double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Determine if the three lengths provided could form a valid <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side a. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side b. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side c. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the three lengths provided could form a valid <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</simplesect>
+<simplesect kind="return"><para>false if the three lengths provided could not form a valid <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="164" column="6" declfile="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" declline="164" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> library namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Lei Mao </para>
+</simplesect>
+<simplesect kind="date"><para>8/3/2020 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="note"><para>Hello Underworld! </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="28" column="1"/>
+  </compounddef>
+</doxygen>

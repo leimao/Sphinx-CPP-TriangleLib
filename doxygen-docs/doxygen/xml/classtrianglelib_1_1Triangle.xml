@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classtrianglelib_1_1Triangle" kind="class" language="C++" prot="public">
+    <compoundname>trianglelib::Triangle</compoundname>
+    <includes refid="triangle_8h" local="no">triangle.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtrianglelib_1_1Triangle_1ae188cc34224faa859147ddc38bb3235a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::mA</definition>
+        <argsstring></argsstring>
+        <name>mA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lengths of side a, b, and c. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="144" column="12" bodyfile="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtrianglelib_1_1Triangle_1a0a01a922595f5d90a0678329608022ec" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::mB</definition>
+        <argsstring></argsstring>
+        <name>mB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="144" column="15" bodyfile="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtrianglelib_1_1Triangle_1a4bc1c20aa032123bc1dabe49a3cf62a4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::mC</definition>
+        <argsstring></argsstring>
+        <name>mC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="144" column="18" bodyfile="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a9c7b9061d1cd47f450ba72d05588516b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>trianglelib::Triangle::Triangle</definition>
+        <argsstring>()</argsstring>
+        <name>Triangle</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object of side lengths 1, 1, and 1. <simplesect kind="see"><para><ref refid="classtrianglelib_1_1Triangle_1af793bd3423867f0965c5d2d94d82f289" kindref="member">Triangle(const double a, const double b, const double c)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtrianglelib_1_1Triangle_1a4ef45f93b0909795599a7c330f60cbe1" kindref="member">Triangle(const Triangle&amp; triangle)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1af793bd3423867f0965c5d2d94d82f289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>trianglelib::Triangle::Triangle</definition>
+        <argsstring>(const double a, const double b, const double c)</argsstring>
+        <name>Triangle</name>
+        <param>
+          <type>const double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object from side lengths. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side a. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side b. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Length of triangle side c. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtrianglelib_1_1Triangle_1a9c7b9061d1cd47f450ba72d05588516b" kindref="member">Triangle()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtrianglelib_1_1Triangle_1a4ef45f93b0909795599a7c330f60cbe1" kindref="member">Triangle(const Triangle&amp; triangle)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="52" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a4ef45f93b0909795599a7c330f60cbe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>trianglelib::Triangle::Triangle</definition>
+        <argsstring>(const Triangle &amp;triangle)</argsstring>
+        <name>Triangle</name>
+        <param>
+          <type>const <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object from another <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtrianglelib_1_1Triangle_1a9c7b9061d1cd47f450ba72d05588516b" kindref="member">Triangle()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtrianglelib_1_1Triangle_1af793bd3423867f0965c5d2d94d82f289" kindref="member">Triangle(const double a, const double b, const double c)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="60" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1aa89f3e4d1f995b339e9bdddce16c6770" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::getSideA</definition>
+        <argsstring>() const</argsstring>
+        <name>getSideA</name>
+        <briefdescription>
+<para>Get the length of side a. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of side a. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="66" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a4eb6fbeff667189d84c102b8513ca5f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::getSideB</definition>
+        <argsstring>() const</argsstring>
+        <name>getSideB</name>
+        <briefdescription>
+<para>Get the length of side b. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of side b. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="72" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a7fb3c5b539e558d1aae2ddac70b8c29b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::getSideC</definition>
+        <argsstring>() const</argsstring>
+        <name>getSideC</name>
+        <briefdescription>
+<para>Get the length of side c. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of side c. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="78" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a8f92f154975f67fc24288037b0a0b9ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> &gt;</type>
+        <definition>std::vector&lt;Triangle&gt; trianglelib::Triangle::rotations</definition>
+        <argsstring>() const</argsstring>
+        <name>rotations</name>
+        <briefdescription>
+<para>Get a vector of the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> objects whose side lengths have been rotated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A vector of <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> objects. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="84" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a067c11520740c02594b39c58c8db4494" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> &amp;</type>
+        <definition>Triangle&amp; trianglelib::Triangle::operator=</definition>
+        <argsstring>(const Triangle &amp;triangle)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <briefdescription>
+<para>Assignment overloading. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The reference to the current <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="91" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1af19b833896fff4090e863c1d8e7bd075" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool trianglelib::Triangle::operator==</definition>
+        <argsstring>(const Triangle &amp;triangle) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <briefdescription>
+<para>Equivalence overloading. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the two <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> objects are the same. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="98" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a1c706d760d704eaf671b04b7535abebf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool trianglelib::Triangle::isEquivalent</definition>
+        <argsstring>(const Triangle &amp;triangle) const</argsstring>
+        <name>isEquivalent</name>
+        <param>
+          <type>const <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <briefdescription>
+<para>Determine if the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object is equivalent to the other. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the two <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> objects are the same. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a63647fd3dd971581e8f4bb27cb0b2179" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool trianglelib::Triangle::isSimilar</definition>
+        <argsstring>(const Triangle &amp;triangle) const</argsstring>
+        <name>isSimilar</name>
+        <param>
+          <type>const <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <briefdescription>
+<para>Determine if the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object is similar to the other. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the two <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> objects are similar. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1ac8ecab9a5c58aefb1e723314b3c511e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool trianglelib::Triangle::isEquilateral</definition>
+        <argsstring>() const</argsstring>
+        <name>isEquilateral</name>
+        <briefdescription>
+<para>Determine if the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object is quilateral. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Whether the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> objects is equilateral. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1ae97c84f995f8ab7d9da361a67c939438" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool trianglelib::Triangle::isIsosceles</definition>
+        <argsstring>() const</argsstring>
+        <name>isIsosceles</name>
+        <briefdescription>
+<para>Determine if the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object is isosceles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Whether the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> objects is isosceles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a95a0358aa3749080fbfba6602c5dc05a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::perimeter</definition>
+        <argsstring>() const</argsstring>
+        <name>perimeter</name>
+        <briefdescription>
+<para>Get the perimeter of the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The perimeter of the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="127" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a7e0af1707be7ded48841c26727db7964" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double trianglelib::Triangle::area</definition>
+        <argsstring>() const</argsstring>
+        <name>area</name>
+        <briefdescription>
+<para>Get the area of the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The area of the <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="132" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classtrianglelib_1_1Triangle_1a7685b8626f106965a0151a715811a3ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref></type>
+        <definition>Triangle trianglelib::Triangle::scale</definition>
+        <argsstring>(const double factor) const</argsstring>
+        <name>scale</name>
+        <param>
+          <type>const double</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Create a new scaled <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A new scaled <ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="138" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtrianglelib_1_1Triangle" kindref="compound">Triangle</ref> class used for triangle manipulations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" line="34" column="1" bodyfile="/home/leimao/GitHub/Sphinx-CPP-TriangleLib/include/triangle.h" bodystart="33" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classtrianglelib_1_1Triangle_1a7e0af1707be7ded48841c26727db7964" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>area</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1aa89f3e4d1f995b339e9bdddce16c6770" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>getSideA</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a4eb6fbeff667189d84c102b8513ca5f9" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>getSideB</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a7fb3c5b539e558d1aae2ddac70b8c29b" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>getSideC</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1ac8ecab9a5c58aefb1e723314b3c511e3" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>isEquilateral</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a1c706d760d704eaf671b04b7535abebf" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>isEquivalent</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1ae97c84f995f8ab7d9da361a67c939438" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>isIsosceles</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a63647fd3dd971581e8f4bb27cb0b2179" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>isSimilar</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1ae188cc34224faa859147ddc38bb3235a" prot="private" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>mA</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a0a01a922595f5d90a0678329608022ec" prot="private" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>mB</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a4bc1c20aa032123bc1dabe49a3cf62a4" prot="private" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>mC</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a067c11520740c02594b39c58c8db4494" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>operator=</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1af19b833896fff4090e863c1d8e7bd075" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>operator==</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a95a0358aa3749080fbfba6602c5dc05a" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>perimeter</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a8f92f154975f67fc24288037b0a0b9ea" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>rotations</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a7685b8626f106965a0151a715811a3ee" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>scale</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a9c7b9061d1cd47f450ba72d05588516b" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>Triangle</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1af793bd3423867f0965c5d2d94d82f289" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>Triangle</name></member>
+      <member refid="classtrianglelib_1_1Triangle_1a4ef45f93b0909795599a7c330f60cbe1" prot="public" virt="non-virtual"><scope>trianglelib::Triangle</scope><name>Triangle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

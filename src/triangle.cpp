@@ -1,13 +1,18 @@
-
-
 #include "triangle.h"
 #include <vector>
 #include <cmath>
+#include <stdexcept>
 
 namespace trianglelib
 {
 
-Triangle::Triangle(const double a, const double b, const double c) : mA{a}, mB{b}, mC{c} {}
+Triangle::Triangle(const double a, const double b, const double c) : mA{a}, mB{b}, mC{c} 
+{
+    if (this->mA <= 0 || this->mB <= 0 || this->mC <= 0)
+    {
+        throw std::runtime_error{"All the Triangle side lengths should be positive!"};
+    }
+}
 
 Triangle::Triangle(const Triangle& triangle)
 {

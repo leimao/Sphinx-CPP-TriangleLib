@@ -8,7 +8,25 @@
 
 ## Instructions
 
-### Quick Start
+### Doxygen Quick Start
+
+```
+$ cd docs/
+$ doxygen
+```
+
+Then modify `Doxyfile` accordingly.
+
+
+### Generate Doxygen Documentations
+
+
+```
+$ cd docs/
+$ doxygen Doxyfile
+```
+
+### Sphinx Quick Start
 
 ```
 $ cd docs/
@@ -50,3 +68,6 @@ source files. Use the Makefile to build the docs, like so:
    make builder
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 ```
+
+Then modify `source/conf.py` accordingly.
+

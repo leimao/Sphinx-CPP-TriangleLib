@@ -35,6 +35,8 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
+    'sphinx.ext.imgmath', 
+    'sphinx.ext.todo',
     'breathe',
 ]
 
@@ -52,7 +54,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'haiku' # 'alabaster'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -61,3 +63,9 @@ html_static_path = ['_static']
 
 
 # -- Extension configuration -------------------------------------------------
+
+breathe_projects = { "trianglelib": "../doxygen/xml/" }
+breathe_default_project = "trianglelib"
+breathe_projects_source = {
+    "auto" : ( "../../include", ["triangle.h"] )
+}

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Triangle Library Documentation</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1intro_sec">
+<title>Introduction</title>
+<para>This is the Triangle C++ library for C++ Documentation Tutorial. </para>
+</sect1>
+<sect1 id="index_1install_sec">
+<title>Installation</title>
+<sect2 id="index_1install_dependencies">
+<title>Installing Dependencies</title>
+<para>Do somethings ... </para>
+</sect2>
+<sect2 id="index_1install_library">
+<title>Installing Library</title>
+<para>Do somethings ... </para>
+</sect2>
+<sect2 id="index_1install_example">
+<title>Installing Examples</title>
+<para>Do somethings ... </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
